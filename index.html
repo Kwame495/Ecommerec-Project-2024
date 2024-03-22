@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCC</title>
+  <!-- font awesome cd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font awesome cdn -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+  <!-- Navigation bar -->
+  <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-style">
+      <li class="nav__list">
+        <a href="index.html" class="nav__link">Home</a>
+      </li>
+      <li class="nav__list">
+        <a href="register.html" class="nav__link">Register</a>
+      </li>
+      <li class="nav__list">
+        <a href="login.html" class="nav__link">Login</a>
+      </li>
+      <li class="nav__list">
+        <a href="index.html" class="nav__link">Logout</a>
+      </li>
+      <li class="nav__list">
+        <a href="contact.html" class="nav__link">Contact</a>
+      </li>
+      <li class="nav__list">
+        <a href="profile.html" class="nav__link"><img src="/4211210342.png" alt="profile" class="profile-icon" /></a>
+      </li>
+    </ul>
+    <ul class="nav-lower flex-style">
+      <li class="nav__brand">
+        <a href="index.html" class="nav__link">Teleios clothing</a>
+      </li>
+      <li class="nav__link">
+        <a href="cart.html " class="nav__link">
+          <span class="text"><i class="fa-solid fa-cart-shopping"></i>3 Day Promo on the Best
+            Crochetting Wear at GH&#8373;120.00</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Header starts here -->
+  <header class="header">
+    <div class="banner flex-style">
+      <marquee behavior="" direction="" class="banner__title">50% DISCOUNT ON ALL PRODUCTS</marquee>
+      <div class="features flex-style">
+        <article class="feature flex-center">
+          <i class="fa-solid fa-truck-fast feature__icon"></i>
+          <h3>Delivery within 7 days</h3>
+        </article>
+        <article class="feature flex-center">
+          <i class="fa-brands fa-rocketchat feature__icon"></i>
+          <h3>Support 24/7</h3>
+        </article>
+        <article class="feature flex-center">
+          <i class="fa-regular fa-credit-card feature__icon"></i>
+          <h3>Safe Payment</h3>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <!-- header ends here -->
+
+  <!-- Main starts here -->
+  <main class="flex-center">
+    <div class="sidebar">
+      <section class="catgory-types">
+        <h3 class="title">Category Wear</h3>
+        <ul class="category-type-list">
+          <li class="list__item">
+            <label for="ladies">
+              <input type="checkbox" name="ladies" id="ladies" value="ladies" />
+              Ladies</label>
+          </li>
+          <li class="list__item">
+            <label for="children">
+              <input type="checkbox" name="children" id="children" value="children" />Children
+            </label>
+          </li>
+          <li class="list__item">
+            <label for="women"><input type="checkbox" name="women" id="women" value="women" />Women
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="category-prices">
+        <h3 class="title">Prices For Ladies</h3>
+        <ul class="category-price-list">
+          <li class="list__item">
+            <label for="regular">
+              <input type="radio" name="regular" id="regular" value="[150,200]" />
+              GH&#8373;150 - GH&#8373;200</label>
+          </li>
+          <li class="list__item">
+            <label for="express">
+              <input type="radio" name="regular" id="express" value="[250,300]" />GH&#8373;250 - GH&#8373;300
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="category-prices">
+        <h3 class="title">Prices For Children</h3>
+        <ul>
+          <li class="list__item">
+            <label for="regularchild">
+              <input type="radio" name="regularchild" id="regularchild" value="[100,150]" />
+              GH&#8373;50 - GH&#8373;100</label>
+          </li>
+          <li class="list__item">
+            <label for="expresschild">
+              <input type="radio" name="regularchild" id="expresschild" value="[50,100]" />GH&#8373;150 - GH&#8373;200
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="category-prices">
+        <h3 class="title">Prices for Women</h3>
+        <ul>
+          <li class="list__item">
+            <label for="regularwomen">
+              <input type="radio" name="regularwomen" id="regularwomen" value="[250,300]" />
+              GH&#8373;250 - GH&#8373;300</label>
+          </li>
+          <li class="list__item">
+            <label for="expresswomen">
+              <input type="radio" name="regularwomen" id="expresswomen" value="[150,200]" />GH&#8373;150 - GH&#8373;200
+            </label>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="main-container">
+      <section class="main-content">
+        <div class="sort">
+          <label for="sort">Sort By</label>
+          <select name="sort" id="sort" class="sort__group">
+            <option value="new">Newest</option>
+            <option value="old">Oldest</option>
+            <option value="rating">Rating</option>
+            <option value="name">By Name</option>
+            <option value="date">By Date</option>
+            <option value="date">By Price</option>
+          </select>
+        </div>
+        <div class="search">
+          <input type="search" name="saerch" id="search" />
+          <button class="btn search__button">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </button>
+        </div>
+        <!-- Products start here -->
+      </section>
+      <!-- Products start here -->
+      <section class="products">
+        <article class="product card">
+          <div class="badge">
+            <span class="badge-description">5 in stock</span>
+            <hr class="hr" />
+            <span class="badge-description">3 sold</span>
+          </div>
+          <img src="crochet/cro-1.jpg" alt="" class="product__img" />
+          <div class="products-body">
+            <h3>Crochet Sheath Dress</h3>
+            <p>
+              <span class="dot green-dot"> </span><span class="dot black-dot"> </span><span class="dot red-dot"> </span>
+            </p>
+            <p class="product__description">
+              A crochet sheath dress is a form-fitting dress that typically
+              falls just above the knee or mid-thigh. It is made using crochet
+              techniques with yarn and can incorporate various stitches and
+              patterns, from simple to intricate designs. The dress can have
+              different styles of neckline, including round neck, V-neck, or
+              boat neck, and can feature different sleeve styles, such as cap
+              sleeves, sleeveless, or off-shoulder. The crochet sheath dress
+              is perfect for a dressy occasion or a night out, depending on
+              the style and accessories....<a href="product 1.html" class="learn__more">Learn More</a>
+            </p>
+            <h4 class="product__price">GH&#8373;200</h4>
+            <p>Rating: 4/5</p>
+            <button class="btn btn-product">ADD TO CART</button>
+          </div>
+        </article>
+        <article class="product card">
+          <div class="badge">
+            <span class="badge-description">5 in stock</span>
+            <hr class="hr" />
+            <span class="badge-description">3 sold</span>
+          </div>
+          <img src="wears/A54a3d730220d485e972d716b12efc2f3u.webp" alt="" class="product__img" />
+          <div class="products-body">
+            <h3>Aso Ebi Lace Dress</h3>
+            <p>
+              <span class="dot green-dot"> </span><span class="dot black-dot"> </span><span class="dot red-dot"> </span>
+            </p>
+            <p class="product__description">
+              An Aso Ebi lace dress is a beautiful and elegant dress made with
+              intricate Aso Ebi lace fabric. Aso Ebi is a Yoruba term that
+              refers to a uniform dress style worn by family and friends at
+              special occasions like weddings, funerals, and other
+              celebrations. The lace fabric used for the dress is typically
+              delicate and intricate, featuring floral or geometric
+              patterns....<a href="product 5.html" class="learn__more">Learn More</a>
+            </p>
+            <h4 class="product__price">GH&#8373;200</h4>
+            <p>Rating: 4/5</p>
+            <button class="btn btn-product">ADD TO CART</button>
+          </div>
+        </article>
+        <article class="product card">
+          <div class="badge">
+            <span class="badge-description">5 in stock</span>
+            <hr class="hr" />
+            <span class="badge-description">3 sold</span>
+          </div>
+          <img src="crochet/5.webp" alt="" class="product__img" />
+          <div class="products-body">
+            <h3>Crochet Lace-Up Dress</h3>
+            <p>
+              <span class="dot green-dot"> </span><span class="dot black-dot"> </span><span class="dot red-dot"> </span>
+            </p>
+            <p class="product__description">
+              It can be made with lightweight yarn for a delicate look or
+              chunky yarn for a more textured appearance. The dress can be
+              accessorized with sandals, wedges, or heels, depending on the
+              occasion, and can be dressed up or down with the right
+              accessories. It is a versatile addition to any wardrobe, perfect
+              for adding a touch of bohemian or romantic style to any
+              outfit....<a href="product 2.html" class="learn__more">Learn More</a>
+            </p>
+            <h4 class="product__price">GH&#8373;200</h4>
+            <p>Rating: 4/5</p>
+            <button class="btn btn-product">ADD TO CART</button>
+          </div>
+        </article>
+        <article class="product card">
+          <div class="badge">
+            <span class="badge-description">5 in stock</span>
+            <hr class="hr" />
+            <span class="badge-description">3 sold</span>
+          </div>
+          <img
+            src="wears/African-Dresses-For-Women-2020-Dashiki-Bodycon-African-Dress-African-Clothes-Fashion-Elegant-Dresses-Ladies-Africa.jpg_Q90.jpg_.webp"
+            alt="" class="product__img" />
+          <div class="products-body">
+            <h3>African Print Romper</h3>
+            <p>
+              <span class="dot green-dot"> </span><span class="dot black-dot"> </span><span class="dot red-dot"> </span>
+            </p>
+            <p class="product__description">
+              African print rompers are a popular fashion statement in Africa
+              and are also gaining popularity around the world as a fun and
+              playful addition to any wardrobe. They can be dressed up with
+              heels and jewelry for a night out or dressed down with sandals
+              for a day at the beach...<a href="product 7.html" class="learn__more">Learn More</a>
+            </p>
+            <h4 class="product__price">GH&#8373;200</h4>
+            <p>Rating: 4/5</p>
+            <button class="btn btn-product">ADD TO CART</button>
+          </div>
+        </article>
+        <article class="product card">
+          <div class="badge">
+            <span class="badge-description">5 in stock</span>
+            <hr class="hr" />
+            <span class="badge-description">3 sold</span>
+          </div>
+          <img src="crochet/6.webp" alt="" class="product__img" />
+          <div class="products-body">
+            <h3>Crochet Maxi Dress</h3>
+            <p>
+              <span class="dot green-dot"> </span><span class="dot black-dot"> </span><span class="dot red-dot"> </span>
+            </p>
+            <p class="product__description">
+              A crochet maxi dress is a long dress that typically falls to the
+              ankles. It is made using crochet techniques with yarn, and the
+              design can incorporate a variety of stitches and patterns. The
+              dress can be made with lightweight yarn for a delicate look or
+              chunky yarn for a bohemian vibe....<a href="product 3.html" class="learn__more">Learn More</a>
+            </p>
+            <h4 class="product__price">GH&#8373;200</h4>
+            <p>Rating: 4/5</p>
+            <button class="btn btn-product">ADD TO CART</button>
+          </div>
+        </article>
+        <article class="product card">
+          <div class="badge">
+            <span class="badge-description">5 in stock</span>
+            <hr class="hr" />
+            <span class="badge-description">3 sold</span>
+          </div>
+          <img src="wears/v1-23-819x1024.webp" alt="" class="product__img" />
+          <div class="products-body">
+            <h3>Kente Wear</h3>
+            <p>
+              <span class="dot green-dot"> </span><span class="dot black-dot"> </span><span class="dot red-dot"> </span>
+            </p>
+            <p class="product__description">
+              A Kente wear is a traditional two-piece outfit made with
+              colorful Kente fabric, a type of handwoven cloth from Ghana. The
+              crop top is typically a fitted, sleeveless top that ends above
+              the navel, while the skirt is a full, flowing skirt that falls
+              to the ankles. Kente fabric is known for its vibrant colors and
+              bold geometric patterns, which are created by weaving strips of
+              cloth together....<a href="product 8.html" class="learn__more">Learn More</a>
+            </p>
+            <h4 class="product__price">GH&#8373;200</h4>
+            <p>Rating: 4/5</p>
+            <button class="btn btn-product">ADD TO CART</button>
+          </div>
+        </article>
+      </section>
+      <!-- Products end here -->
+      <!-- Pagination starts here -->
+      <div class="pagination">
+        <button class="btn btn-pagination">
+          <i class="fab fa-less-than"></i></button><button class="btn btn-pagination">2</button><button
+          class="btn btn-pagination">3</button><button class="btn btn-pagination">4</button><button
+          class="btn btn-pagination">5</button><button class="btn btn-pagination">6</button><button
+          class="btn btn-pagination">7</button><button class="btn btn-pagination">8</button><button
+          class="btn btn-pagination">9</button><button class="btn btn-pagination">10</button><button
+          class="btn btn-pagination">...</button><button class="btn btn-pagination">50</button>
+        <button class="btn btn-pagination">
+          <i class="fab fa-greater-than"></i>
+        </button>
+      </div>
+      <!-- pagination ends here -->
+    </div>
+  </main>
+  <!-- Main ends here -->
+
+  <!-- Footer starts here -->
+  <footer class="footer flex-style">
+    <div class="foot flex-style">
+      <label for="subscribe">Subscribe to the News Letter:</label>
+      <input type="email" name="subscribe" id="subscribe" placeholder="Your Email Address" class="footer__input" />
+      <button class="btn btn-subscribe">Subscribe</button>
+    </div>
+    <div>
+      <p class="copy">
+        &copy;Copyright 2023 by <strong>KWAME A PLUS.</strong> All rigths
+        reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+  <script src="script.js"></script>
+</body>
+
+</html>
